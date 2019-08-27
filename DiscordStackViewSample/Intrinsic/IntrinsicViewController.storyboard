@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ovh-F4-LaH">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intrinsic View Controller-->
+        <scene sceneID="VTX-5h-KlD">
+            <objects>
+                <viewController id="Ovh-F4-LaH" customClass="IntrinsicViewController" customModule="DiscordStackViewSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tFb-5u-xkk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PdT-sh-ODA">
+                                <rect key="frame" x="32" y="68" width="350" height="29"/>
+                                <segments>
+                                    <segment title="Short"/>
+                                    <segment title="Long"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onSegmentChanged:" destination="Ovh-F4-LaH" eventType="valueChanged" id="0jm-de-XpZ"/>
+                                </connections>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="6k1-sL-81j">
+                                <rect key="frame" x="32" y="112" width="350" height="84.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Large Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imN-E8-gg5">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9k-7s-AyC">
+                                        <rect key="frame" x="0.0" y="41" width="350" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Small footer. All rights reserved." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21K-az-H39">
+                                        <rect key="frame" x="0.0" y="70" width="350" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fBa-go-x17" firstAttribute="trailing" secondItem="PdT-sh-ODA" secondAttribute="trailing" constant="32" id="AL3-0h-81P"/>
+                            <constraint firstItem="fBa-go-x17" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6k1-sL-81j" secondAttribute="bottom" constant="16" id="GmF-ur-AZh"/>
+                            <constraint firstItem="6k1-sL-81j" firstAttribute="top" secondItem="PdT-sh-ODA" secondAttribute="bottom" constant="16" id="NKi-rm-Hpo"/>
+                            <constraint firstItem="PdT-sh-ODA" firstAttribute="top" secondItem="fBa-go-x17" secondAttribute="top" constant="24" id="PG7-Yf-IdN"/>
+                            <constraint firstItem="6k1-sL-81j" firstAttribute="leading" secondItem="fBa-go-x17" secondAttribute="leading" constant="32" id="V44-Ra-FfV"/>
+                            <constraint firstItem="PdT-sh-ODA" firstAttribute="leading" secondItem="fBa-go-x17" secondAttribute="leading" constant="32" id="W2G-vY-YYi"/>
+                            <constraint firstItem="fBa-go-x17" firstAttribute="trailing" secondItem="6k1-sL-81j" secondAttribute="trailing" constant="32" id="xxd-sA-Tz2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fBa-go-x17"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="L9k-7s-AyC" id="Sjq-AZ-9Vc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EB4-Tu-JFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="481" y="-245"/>
+        </scene>
+    </scenes>
+</document>
