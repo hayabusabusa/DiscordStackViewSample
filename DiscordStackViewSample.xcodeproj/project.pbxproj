@@ -17,6 +17,14 @@
 		A4A3E8FC2314F3E000188085 /* IntrinsicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3E8FB2314F3DF00188085 /* IntrinsicViewController.swift */; };
 		A4A3E8FE2314F42E00188085 /* IntrinsicViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A3E8FD2314F42D00188085 /* IntrinsicViewController.storyboard */; };
 		A4A3E9002314F64100188085 /* ConstitutionStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3E8FF2314F64100188085 /* ConstitutionStrings.swift */; };
+		A4A3E903231513DA00188085 /* WithScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3E902231513DA00188085 /* WithScrollViewController.swift */; };
+		A4A3E9052315140C00188085 /* WithScrollViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A3E9042315140C00188085 /* WithScrollViewController.storyboard */; };
+		A4A3E90823151ED000188085 /* ComplexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3E90723151ED000188085 /* ComplexViewController.swift */; };
+		A4A3E90A23151EFE00188085 /* ComplexViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A3E90923151EFE00188085 /* ComplexViewController.storyboard */; };
+		A4A3E90C23151F5600188085 /* ComplexCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3E90B23151F5600188085 /* ComplexCollectionViewController.swift */; };
+		A4A3E90F23151FFE00188085 /* ComplexCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3E90D23151FFE00188085 /* ComplexCollectionViewCell.swift */; };
+		A4A3E91023151FFE00188085 /* ComplexCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A3E90E23151FFE00188085 /* ComplexCollectionViewCell.xib */; };
+		A4A3E912231522FC00188085 /* ComplexItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3E911231522FC00188085 /* ComplexItemProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,14 @@
 		A4A3E8FB2314F3DF00188085 /* IntrinsicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicViewController.swift; sourceTree = "<group>"; };
 		A4A3E8FD2314F42D00188085 /* IntrinsicViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IntrinsicViewController.storyboard; sourceTree = "<group>"; };
 		A4A3E8FF2314F64100188085 /* ConstitutionStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstitutionStrings.swift; sourceTree = "<group>"; };
+		A4A3E902231513DA00188085 /* WithScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithScrollViewController.swift; sourceTree = "<group>"; };
+		A4A3E9042315140C00188085 /* WithScrollViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WithScrollViewController.storyboard; sourceTree = "<group>"; };
+		A4A3E90723151ED000188085 /* ComplexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexViewController.swift; sourceTree = "<group>"; };
+		A4A3E90923151EFE00188085 /* ComplexViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ComplexViewController.storyboard; sourceTree = "<group>"; };
+		A4A3E90B23151F5600188085 /* ComplexCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexCollectionViewController.swift; sourceTree = "<group>"; };
+		A4A3E90D23151FFE00188085 /* ComplexCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexCollectionViewCell.swift; sourceTree = "<group>"; };
+		A4A3E90E23151FFE00188085 /* ComplexCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComplexCollectionViewCell.xib; sourceTree = "<group>"; };
+		A4A3E911231522FC00188085 /* ComplexItemProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexItemProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +85,8 @@
 				A4A3E8E72314D1E600188085 /* Main.storyboard */,
 				A4A3E8F52314D29900188085 /* Hidden */,
 				A4A3E8FA2314E34600188085 /* Intrinsic */,
-				A4A3E9012314FB6900188085 /* Scroll */,
+				A4A3E9012314FB6900188085 /* WithScroll */,
+				A4A3E90623151E6900188085 /* Complex */,
 				A4A3E8EA2314D1EB00188085 /* Assets.xcassets */,
 				A4A3E8EC2314D1EB00188085 /* LaunchScreen.storyboard */,
 				A4A3E8EF2314D1EB00188085 /* Info.plist */,
@@ -96,11 +113,26 @@
 			path = Intrinsic;
 			sourceTree = "<group>";
 		};
-		A4A3E9012314FB6900188085 /* Scroll */ = {
+		A4A3E9012314FB6900188085 /* WithScroll */ = {
 			isa = PBXGroup;
 			children = (
+				A4A3E902231513DA00188085 /* WithScrollViewController.swift */,
+				A4A3E9042315140C00188085 /* WithScrollViewController.storyboard */,
 			);
-			path = Scroll;
+			path = WithScroll;
+			sourceTree = "<group>";
+		};
+		A4A3E90623151E6900188085 /* Complex */ = {
+			isa = PBXGroup;
+			children = (
+				A4A3E911231522FC00188085 /* ComplexItemProvider.swift */,
+				A4A3E90723151ED000188085 /* ComplexViewController.swift */,
+				A4A3E90923151EFE00188085 /* ComplexViewController.storyboard */,
+				A4A3E90B23151F5600188085 /* ComplexCollectionViewController.swift */,
+				A4A3E90D23151FFE00188085 /* ComplexCollectionViewCell.swift */,
+				A4A3E90E23151FFE00188085 /* ComplexCollectionViewCell.xib */,
+			);
+			path = Complex;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +195,10 @@
 			files = (
 				A4A3E8EE2314D1EB00188085 /* LaunchScreen.storyboard in Resources */,
 				A4A3E8F92314D2DE00188085 /* HiddenViewController.storyboard in Resources */,
+				A4A3E9052315140C00188085 /* WithScrollViewController.storyboard in Resources */,
 				A4A3E8EB2314D1EB00188085 /* Assets.xcassets in Resources */,
+				A4A3E90A23151EFE00188085 /* ComplexViewController.storyboard in Resources */,
+				A4A3E91023151FFE00188085 /* ComplexCollectionViewCell.xib in Resources */,
 				A4A3E8FE2314F42E00188085 /* IntrinsicViewController.storyboard in Resources */,
 				A4A3E8E92314D1E600188085 /* Main.storyboard in Resources */,
 			);
@@ -177,10 +212,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4A3E8E62314D1E600188085 /* ViewController.swift in Sources */,
+				A4A3E912231522FC00188085 /* ComplexItemProvider.swift in Sources */,
+				A4A3E903231513DA00188085 /* WithScrollViewController.swift in Sources */,
 				A4A3E8E42314D1E600188085 /* AppDelegate.swift in Sources */,
+				A4A3E90C23151F5600188085 /* ComplexCollectionViewController.swift in Sources */,
 				A4A3E8FC2314F3E000188085 /* IntrinsicViewController.swift in Sources */,
 				A4A3E9002314F64100188085 /* ConstitutionStrings.swift in Sources */,
+				A4A3E90823151ED000188085 /* ComplexViewController.swift in Sources */,
 				A4A3E8F72314D2B200188085 /* HiddenViewController.swift in Sources */,
+				A4A3E90F23151FFE00188085 /* ComplexCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
