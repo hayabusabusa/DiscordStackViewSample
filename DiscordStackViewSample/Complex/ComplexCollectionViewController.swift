@@ -82,6 +82,7 @@ extension ComplexCollectionViewController: UICollectionViewDataSource, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ComplexCollectionViewCell.reuseIdentifier, for: indexPath) as! ComplexCollectionViewCell
         cell.setupUI(dataSource[indexPath.row])
+        //print("\(self) CollectionView resuse at \(indexPath)")
         return cell
     }
     

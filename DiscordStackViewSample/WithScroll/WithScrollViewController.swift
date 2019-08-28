@@ -21,6 +21,14 @@ final class WithScrollViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "with ScrollView"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh(_:)))
+        
+        let dict = ConstitutionStrings.dictionary()
+        titleLabel.text = dict.key
+        contentLabel.text = dict.value
+    }
+    
+    @objc func refresh(_ sender: UIBarButtonItem) {
         let dict = ConstitutionStrings.dictionary()
         titleLabel.text = dict.key
         contentLabel.text = dict.value

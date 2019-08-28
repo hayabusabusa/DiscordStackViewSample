@@ -99,8 +99,33 @@
                                             <segue destination="wQ8-ph-AjE" kind="show" id="e4K-Oz-Jfu"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="48" id="aAQ-aF-r5J">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="48" id="GdV-rs-UmN">
                                         <rect key="frame" x="0.0" y="255.5" width="414" height="48"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GdV-rs-UmN" id="Kx1-af-iG4">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="47.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advanced" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROa-Q6-dAO">
+                                                    <rect key="frame" x="24" y="8" width="320" height="31.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ROa-Q6-dAO" secondAttribute="bottom" constant="8" id="9L4-RJ-JjS"/>
+                                                <constraint firstItem="ROa-Q6-dAO" firstAttribute="leading" secondItem="Kx1-af-iG4" secondAttribute="leading" constant="24" id="NY1-9H-G45"/>
+                                                <constraint firstItem="ROa-Q6-dAO" firstAttribute="top" secondItem="Kx1-af-iG4" secondAttribute="top" constant="8" id="Tnd-s6-r75"/>
+                                                <constraint firstAttribute="trailing" secondItem="ROa-Q6-dAO" secondAttribute="trailing" constant="32" id="t7P-y0-tOg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="zwk-mI-shJ" kind="show" id="diB-Vc-Pjm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="48" id="aAQ-aF-r5J">
+                                        <rect key="frame" x="0.0" y="303.5" width="414" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aAQ-aF-r5J" id="4AC-cN-HNG">
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="47.5"/>
@@ -129,7 +154,7 @@
                             <tableViewSection id="Bas-6p-pJg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="48" id="udX-j1-Y0Z">
-                                        <rect key="frame" x="0.0" y="339.5" width="414" height="48"/>
+                                        <rect key="frame" x="0.0" y="387.5" width="414" height="48"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="udX-j1-Y0Z" id="wUh-tQ-qmM">
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="47.5"/>
@@ -188,7 +213,15 @@
                 <viewControllerPlaceholder storyboardName="WithScrollViewController" id="wQ8-ph-AjE" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hYp-eA-Wmt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2174" y="-87"/>
+            <point key="canvasLocation" x="2172" y="-75"/>
+        </scene>
+        <!--AdvancedViewController-->
+        <scene sceneID="X72-Bt-b5I">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdvancedViewController" id="zwk-mI-shJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scH-HR-9Dm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2171" y="-44"/>
         </scene>
         <!--ComplexViewController-->
         <scene sceneID="aJN-AY-hiW">
@@ -196,7 +229,7 @@
                 <viewControllerPlaceholder storyboardName="ComplexViewController" id="kp6-zv-T4t" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3f-m3-HGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2166" y="-55"/>
+            <point key="canvasLocation" x="2164" y="-12"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hz8-gR-IsB">
